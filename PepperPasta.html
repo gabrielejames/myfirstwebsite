@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREAMY ROASTED PEPPER PASTA / VEGAN LORE</title>
+    <link href="SCSS/my_webpage.css" rel="stylesheet" type="text/css">
+    <!--Link to main stylesheet for website-->
+    <link href="SCSS/bootstrap-grid.css" rel="stylesheet" type="text/css"> <!-- Sets up the grid structure -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script type="text/javascript" src="javascript/script.js"></script>
+</head>
+
+<body onload="myLoad()">
+
+    <h1>Vegan Lore</h1>
+
+    <!--Navbar section-->
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li id="recipes"><a href="recipes.html">RECIPES</a>
+                <ul class="dropdown-content">
+                    <li> <a href="recipes.html#breakfast">
+                            Breakfast
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recipes.html#lunch">
+                            Lunch
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recipes.html#dinner">
+                            Dinner
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="about_me.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="saved-articles.html">YOUR RECIPE BOX</a></li>
+        </ul>
+    </nav>
+
+    <!--main content-->
+    <div class="container about-content">
+        <div id="PepperPasta" class="recipe">
+
+            <h3>Creamy Roasted Pepper and caramlized shallot pasta</h3>
+            <button style="margin: auto;" onclick="saveRecipe(event)">Save for later</button>
+            <form>
+                <button class="like" onclick="likeRecipe(this.form)">Like this recipe</button>
+            </form>
+            <img src="images/pasta.jpg">
+            <p> I pretty much grew up eating baked bean sandwiches. They're just so good.
+                Cake halvah cupcake chocolate marzipan soufflé fruitcake caramels lemon drops. Tiramisu pudding toffee sweet roll bonbon pudding. Marzipan sweet roll ice cream cookie. Dessert icing caramels bear claw. Gummi bears gummies pastry cake. Lollipop pudding cookie toffee oat cake. Tiramisu jelly tart wafer biscuit. Icing jelly marzipan cake pie pudding fruitcake bear claw. Cake icing sweet roll ice cream tiramisu marshmallow pie carrot cake pudding.
+            </p>
+            <p>
+                Marzipan cake icing cupcake icing sugar plum. Marzipan pudding donut pastry gingerbread tart. Chocolate cake sweet roll candy jelly cupcake. Caramels tootsie roll pastry chupa chups cotton candy chocolate cake jelly gingerbread wafer. Macaroon candy canes chocolate cake toffee chocolate bar halvah macaroon croissant. Cake liquorice muffin gummies bear claw dessert cotton candy. Candy jelly beans oat cake powder. Danish croissant gummies soufflé carrot cake jelly cheesecake. Chupa chups jujubes lollipop cupcake biscuit halvah tart. Cupcake chocolate cake oat cake pastry tiramisu tiramisu fruitcake.
+                Topping biscuit donut cotton candy brownie caramels. Sesame snaps marshmallow tart marzipan. Sesame snaps sugar plum cupcake soufflé pudding donut gummi bears jelly beans carrot cake. Muffin danish gummi bears. Fruitcake lollipop bear claw jujubes carrot cake. Tart marzipan icing jujubes soufflé bonbon jelly. Apple pie cake jelly bear claw jelly topping.
+            </p>
+
+            <!--comment section-->
+
+            <div class="comment">
+
+                <h3 class="comment-heading">leave a comment</h3>
+                <form class="comment-form" style="display:none;">
+
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                    <label name="email" for="email">Email address:</label>
+                    <input id="email" name="email" type="email">
+                    <br>
+                    <label for="comment">Enter your comment:</label>
+                    <textarea id="comment" name="comment" rows="10"></textarea>
+                    <input type="submit" value="Submit" onclick="addComment(event)">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Footer section-->
+
+    <footer class="footer container-fluid">
+
+        <div class="row">
+            <div class="col-3">
+                <h4>Follow me!</h4>
+            </div>
+            <div class="col-3">
+                <h4>Subscribe</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <ul>
+                    <li><a href="https://twitter.com/gabymoonbeam?lang=en" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/panzermoonbeam/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="https://za.linkedin.com/in/gabriele-james-739513123" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <p id="footer-text">Keep up to date with what I'm cooking and eating. Your proverbial deets are safe with me.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-3">
+                <input type="text" placeholder="your email">
+                <button>Submit!</button>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

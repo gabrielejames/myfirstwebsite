@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEGAN LORE / ABOUT ME</title>
+    <link href="SCSS/my_webpage.css" rel="stylesheet" type="text/css">
+    <!--Link to main stylesheet for website-->
+    <link href="SCSS/bootstrap-grid.css" rel="stylesheet" type="text/css"> <!-- Sets up the grid structure -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script type="text/javascript" src="javascript/script.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Vegan Lore</h1>
+
+    <!--Navbar section-->
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li id="recipes"><a href="recipes.html">RECIPES</a>
+                <ul class="dropdown-content">
+                    <li> <a href="recipes.html#breakfast">
+                            Breakfast
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recipes.html#lunch">
+                            Lunch
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recipes.html#dinner">
+                            Dinner
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="about_me.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="saved-articles.html">YOUR RECIPE BOX</a></li>
+        </ul>
+    </nav>
+
+    <!--main content-->
+
+    <div class="container-fluid about-content">
+
+        <div class="row">
+            <h2>Hello!</h2>
+        </div>
+
+        <div class="row">
+            <div class="col about-content">
+                <h3>This is me</h3>
+                <img src="images/ME.jpg" class="cropped-img">
+                <p>I'm an aimless philosophy graduate distracting myself from the inevitability of death
+                    by eating and cooking everything that doesn't share the burden of sentience with me.
+                </p>
+                <h3>Things people have said about me</h3>
+                <q>If you don't know what to cook for dinner or where to go for date-night with
+                    your vegan Tinder date, ask Gaby.
+                </q>
+
+            </div>
+            <div class="col">
+                <h3>
+                    My home bakery:
+                </h3>
+                <div class="block-container">
+                    <img src="images/doughssant.jpg">
+                    <div class="block-text">
+                        Rumsy's Noose
+                    </div>
+                </div>
+                <p>I run a home bakery mainly as an excuse to bake things like vegan doughssants and not have to eat all
+                    of them by myself.
+                </p>
+                <h3>Thing's people have said about Rumsy's Noose</h3>
+                <q>I can't believe everything she makes is vegan. Her doughnuts are the best in Cape Town.</q>
+            </div>
+            <div class="col">
+                <h3>
+                    My illustrations:
+                </h3>
+                <div class="block-container">
+                    <img src="images/bottom-feeder.jpg">
+                    <div class="block-text">
+                        Behance
+                    </div>
+                </div>
+                <p>I am a very amateur illustrator and have done some small projects for friends.</p>
+                <h3>Things people have said about my illustration</h3>
+                <q>Pretty dark.</q>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Footer section-->
+
+    <footer class="footer container-fluid">
+
+        <div class="row">
+            <div class="col-3">
+                <h4>Follow me!</h4>
+            </div>
+            <div class="col-3">
+                <h4>Subscribe</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <ul>
+                    <li><a href="https://twitter.com/gabymoonbeam?lang=en" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/panzermoonbeam/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="https://za.linkedin.com/in/gabriele-james-739513123" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <p id="footer-text">Keep up to date with what I'm cooking and eating. Your proverbial deets are safe with me.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-3">
+                <input type="text" placeholder="your email">
+                <button>Submit!</button>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
