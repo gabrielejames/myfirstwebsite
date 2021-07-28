@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+$pacifico: 'Pacifico',
+sans-serif; // Imports the font 'Pacifico from Google Fonts
+
+$main-colour: rgb(255, 219, 231); // theme colours for the website
+$secondary-colour: rgb(90, 91, 179);
+$text-colour: rgb(86, 86, 86);
+$highlight-colour: rgb(247, 247, 247);
+$accent-colour:#FFF67D;
+
+body {
+    background-color: $main-colour;
+}
+
+
+nav ul {
+    font-family: 'Helvetica', sans-serif;
+    color: $secondary-colour;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    //displays a horizontal navbar
+    display: inline;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: $accent-colour;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: $pacifico;
+    font-size: 100px;
+    color: $secondary-colour;
+    text-align: center;
+}
+
+h2 {
+    font-family: $pacifico, sans-serif;
+    color: $secondary-colour;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: $secondary-colour;
+    text-align: left;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.center {
+    //centers content. source : "https://www.w3.org/Style/Examples/007/center.en.html
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.featured p {
+    background-color: $highlight-colour;
+    color: $text-colour;
+    font-family: 'Helvetica', sans-serif;
+    text-align: left;
+
+}
+
+.caption {
+    background-color: $highlight-colour;
+    padding-bottom: 5px;
+    @extend .center;
+    width: 400px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cropped-img {
+    //crops images into squares and centers them
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    flex: 0 0 auto;
+    @extend .center;
+
+
+}
+
+.row h2 {
+    padding-top: 1em;
+}
+
+
+footer h4 {
+    font-family: $pacifico, sans-serif;
+    font-size: 25px;
+    color: $secondary-colour;
+    margin-bottom: 0px;
+}
+
+#footer-text {
+    background-color: $main-colour;
+    margin-top: 0px;
+}
+
+footer ul {
+    font-family: 'Helvetica', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: $text-colour;
+}
+
+.bio-img {
+    // is this necessary?
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    flex: 0 0 auto;
+
+}
+
+.about-content h3 {
+    text-align: center;
+    font-family: 'Helvetica';
+
+}
+
+.about-content p {
+    text-align: center;
+    font-family: 'Helvetica';
+    color: $text-colour;
+}
+
+q {
+    font-family: 'Helvetica', sans-serif;
+    color: $text-colour;
+    text-align: center;
+}
+
+.block-container {
+    //a container for text on a background image
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.block-container img {
+    //makes the images into squares and centers them
+    @extend .cropped-img;
+}
+
+.block-text {
+    //defines how the text will appear against the image background
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $pacifico;
+    color: $secondary-colour;
+    font-size: 80px;
+}
+
+
+//Styling for the contact form. Source: https://www.w3schools.com/howto/howto_css_contact_form.asp
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: $main-colour;
+    color: $secondary-colour;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker color */
+input[type=submit]:hover {
+    background-color: rgb(252, 201, 218)
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
+    border-radius: 5px;
+    background-color: $secondary-colour;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.contact-container label {
+    color: $main-colour;
+    font-family: 'Helvetica';
+    background-color: transparent;
+}
+
+form p {
+    background-color: transparent;
+}
+
+.recipe button,
+.card button,
+.caption button {
+    color: $secondary-colour;
+    background-color: $accent-colour;
+    text-align: center;
+    display: flex;
+    margin: auto;
+
+}
+
+.recipe {
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.recipe p {
+    text-align: left;
+}
+
+.recipe img {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: block;
+
+
+}
+
+.recipe h3 {
+    @extend h2;
+    font-family: $pacifico, sans-serif;
+    text-transform: capitalize;
+}
+
+
+.card {
+    position: relative;
+    //display: flex;
+    //flex-direction: column;
+    float: left;
+    min-width: 0;
+    width: 18rem;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    padding: 10px;
+    text-align: left;
+    margin: 10px;
+}
+
+.card-img {
+    border-radius: calc(0.25rem - 1px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    @extend .cropped-img;
+
+}
+
+//src = bootstrap 5
+
+.comment {
+    background-color: $secondary-colour;
+    padding: 10px;
+    border-radius: 5px;
+    color: $highlight-colour;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    opacity: 90%;
+}
+
+.comment h3,
+.comment p {
+    color: $main-colour;
+}
+
+.comment h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: $main-colour;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.category h3 {
+    color: $text-colour;
+}
